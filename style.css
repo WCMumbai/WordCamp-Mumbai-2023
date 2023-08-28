@@ -1,0 +1,45 @@
+/* WordCamp Mumbai 2023 CSS Starts */
+
+/* Increase the size on menu toggle SVG in mobile */
+.wp-block-navigation__responsive-container-open svg {
+	fill: currentColor;
+	display: block;
+	height: 44px;
+	pointer-events: none;
+	width: 44px;
+}
+
+/* Increase the size + Padding of menu Close SVG in mobile */
+
+.wp-block-navigation__responsive-container-close svg {
+	fill: currentColor;
+	display: block;
+	height: 44px;
+	pointer-events: none;
+	width: 44px;
+	padding: 20px;
+}
+
+/* Button Box Shodow*/
+.tbutton1 {
+	box-shadow: 8px 8px 0 rgb(0, 0, 0);
+}
+
+
+/* removes bottom padding from the footer last block. */
+
+.wp-site-blocks {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.wp-site-blocks>header+* {
+	margin-top: 0;
+	padding-top: 0 !important;
+}
+
+.wp-block-site-logo {
+	padding-block: 5px;
+}
+
+/* WordCamp Mumbai 2023 CSS Ends */
