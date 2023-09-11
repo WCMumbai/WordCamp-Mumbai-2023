@@ -1,5 +1,523 @@
-@import "base";
-@import "typography";
-@import "components";
-@import "blocks";
+/* WordCamp Mumbai 2023 CSS Starts */
 
+/* Increase the size on menu toggle SVG in mobile */
+.wp-block-navigation__responsive-container-open svg {
+	display: block;
+	fill: currentColor;
+	height: 44px;
+	pointer-events: none;
+	width: 44px;
+}
+
+/* Increase the size + Padding of menu Close SVG in mobile */
+.wp-block-navigation__responsive-container-close svg {
+	display: block;
+	fill: currentColor;
+	height: 44px;
+	padding: 20px;
+	pointer-events: none;
+	width: 44px;
+}
+
+/* Button Box Shodow */
+.tbutton1 {
+	box-shadow: 8px 8px 0 rgb(0 0 0);
+}
+
+/* removes bottom padding from the footer last block. */
+.wp-site-blocks {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+.wp-site-blocks > header + * {
+	margin-top: 0;
+	padding-top: 0 !important;
+}
+
+.wp-block-site-logo {
+	padding-block: 5px;
+}
+
+.calls-card {
+	border-radius: 0;
+	clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+	position: relative;
+	transition: all 300ms;
+}
+
+.calls-card:hover {
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+	transition: all 300ms;
+}
+
+.calls-card figure {
+	background-color: #fff;
+	border-radius: 50%;
+	display: block;
+	filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 40%));
+	margin: 0 auto;
+	padding: 16px;
+	width: fit-content;
+}
+
+.calls-card figure img {
+	max-width: 100px;
+}
+
+.call-for-sponsors:hover {
+	background-color: var(--wp--preset--color--custom-blue-secondary) !important;
+}
+
+.call-for-volunteers:hover {
+	background-color: var(--wp--preset--color--custom-orange-secondary) !important;
+}
+
+.call-for-speakers:hover {
+	background-color: var(--wp--preset--color--custom-blue-secondary) !important;
+}
+
+.calls-card a::after {
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.footer-sponsor-list li {
+	background-color: #fff;
+	border-radius: 0;
+	clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+	padding: 24px;
+	transition: clip-path 300ms;
+}
+
+.wp-block-social-link {
+	border-radius: 0;
+	clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+	padding: 4px;
+	transition: clip-path 300ms;
+}
+
+.wp-block-social-link:hover {
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+	transform: none;
+	transition: clip-path 300ms;
+}
+
+.footer-sponsor-list li:hover {
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+	transition: clip-path 300ms;
+}
+
+.footer-sponsor-list li figure {
+	margin: 0;
+}
+
+.wp-block-button.is-style-fill a {
+	background-color: var(--wp--preset--color--custom-orange-primary);
+	border-radius: 0;
+	clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+	color: #fff;
+	padding: 16px 32px;
+	transition: all 300ms;
+}
+
+.wp-block-button.is-style-fill button {
+	background-color: var(--wp--preset--color--custom-orange-primary);
+	border-radius: 0;
+	clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+	color: #fff;
+	padding: 16px 32px;
+	transition: all 300ms;
+}
+
+.wp-block-button.is-style-fill {
+	filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 40%));
+}
+
+.wp-block-button.is-style-fill a:hover {
+	background-color: var(--wp--preset--color--custom-orange-secondary);
+	border-radius: 0;
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+	color: #000;
+	transition: all 300ms;
+}
+
+.wp-block-button.is-style-fill button:hover {
+	background-color: var(--wp--preset--color--custom-orange-secondary);
+	border-radius: 0;
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+	color: #000;
+	transition: all 300ms;
+}
+
+.reduce-skew .wp-block-button.is-style-fill a {
+	clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+}
+
+.reduce-skew .wp-block-button.is-style-fill a:hover {
+	background-color: var(--wp--preset--color--custom-orange-secondary);
+	border-radius: 0;
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+	color: #000;
+	transition: all 300ms;
+}
+
+footer {
+	box-shadow: inset 0 11px 8px -10px #ccc, inset 0 -11px 8px -10px #ccc;
+	margin-top: 0;
+	padding-top: 5px;
+}
+
+footer .wp-social-link {
+	border-radius: 0;
+	clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+	padding: 4px;
+}
+
+.add-heading-shadow-blue {
+	text-shadow: -4px 6px var(--wp--preset--color--custom-blue-tertiary);
+}
+
+.add-heading-shadow-orange {
+	text-shadow: -4px 6px var(--wp--preset--color--custom-orange-tertiary);
+}
+
+.add-heading-shadow-gray {
+	text-shadow: -4px 6px #dbdbdb;
+}
+
+.news-and-updates .wp-block-post-featured-image .wp-post-image {
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+	transition: all 300ms;
+}
+
+.news-and-updates li.wp-block-post:hover .wp-block-post-featured-image .wp-post-image {
+	clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+	transition: all 300ms;
+}
+
+.footer-items {
+	text-align: center;
+}
+
+@media (min-width: 600px) {
+	.footer-items {
+		text-align: left;
+	}
+
+	.home-hero-heading-one {
+		text-shadow: -2px 2px 2px var(--wp--preset--color--custom-blue-tertiary);
+	}
+}
+
+@media (min-width: 1280px) {
+	.entry-content {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.has-custom-blue-terriary-background-color {
+	background-color: var(--wp--preset--color--custom-blue-tertiary);
+}
+
+/* .wp-block-cover .wp-block-post-title {
+	background: var(--wp--preset--color--custom-orange-primary);
+	padding: 0 100px;
+	clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+} */
+
+.home-hero-heading-two {
+	text-shadow: -4px 6px var(--wp--preset--color--custom-orange-tertiary);
+}
+
+.wp-block-site-logo {
+	filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 40%));
+}
+
+.page-slug-code-of-conduct ol.has-background,
+.page-slug-code-of-conduct ul.has-background {
+	padding: 0;
+}
+
+/* reduces hompage below heading spacer height in mobile layout. */
+@media (max-width: 600px) {
+	.home-below-heading-spacer {
+		height: 40px !important;
+	}
+
+	.footer-sponsor-list li img {
+		display: block;
+		margin: 0 auto;
+		max-width: 220px;
+	}
+
+	.wp-block-cover .wp-block-navigation__responsive-container.is-menu-open {
+		background-color: var(--wp--preset--color--custom-orange-tertiary) !important;
+		color: var(--wp--preset--color--custom-orange-primary) !important;
+	}
+
+	.wp-block-cover .wp-block-navigation__container {
+		border-bottom: 1px solid var(--wp--preset--color--custom-orange-primary);
+		gap: 0 !important;
+		margin-top: 60px;
+	}
+
+	.wp-block-cover .wp-block-navigation__container,
+	.wp-block-cover .wp-block-navigation__container .wp-block-navigation-item {
+		width: 100%;
+	}
+
+	.wp-block-cover .wp-block-navigation__container .wp-block-navigation-item {
+		border-top: 1px solid var(--wp--preset--color--custom-orange-primary);
+		overflow-x: hidden;
+	}
+
+	.wp-block-cover .wp-block-navigation__container .wp-block-navigation-item a {
+		font-weight: bold;
+		padding: 20px !important;
+		width: 100%;
+	}
+
+	.wp-block-cover .wp-block-navigation__container .wp-block-navigation-item a:hover {
+		background-color: var(--wp--preset--color--custom-orange-primary);
+		color: #fff;
+	}
+}
+
+.wp-block-navigation__responsive-container-close {
+	background-color: var(--wp--preset--color--custom-orange-primary);
+	border-radius: 10px;
+}
+
+.wp-block-cover .wp-block-navigation__responsive-container-close svg {
+	fill: #fff;
+	padding: 10px;
+}
+
+.wcm23-skew-5 {
+	clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+	filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 40%));
+	padding: auto 10%;
+	transition: all 300ms;
+}
+
+.wcm23-skew-15 {
+	clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+	filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 40%));
+	padding: auto 10%;
+	transition: all 300ms;
+}
+
+.wcm23-skew-15 {
+	clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+	filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 40%));
+	padding: auto 10%;
+	transition: all 300ms;
+}
+
+.wcm23-photo-credit {
+	clip-path: polygon(2% 0, 100% 0%, 98% 100%, 0% 100%);
+	color: var(--wp--preset--color--custom-orange-secondary);
+	font-size: 0.6em;
+	font-style: italic;
+	text-align: center;
+	transition: all 300ms;
+}
+
+.wcm23-photo-credit a {
+	color: var(--wp--preset--color--custom-orange-secondary);
+}
+
+/**
+ * CampTix Elements
+ * Tix for WordCamp Asia 2024
+ **/
+
+#tix .tix-ticket-form,
+#tix .tix_tickets_table {
+	border: 1px solid var(--wp--preset--color--custom-orange-primary) !important;
+	margin: auto !important;
+	margin-bottom: 1.25em;
+	max-width: 640px;
+	padding-bottom: clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);
+	padding-left: var(--wp--preset--spacing--40);
+	padding-right: var(--wp--preset--spacing--40);
+	padding-top: clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);
+	width: 80%;
+}
+
+#tix a,
+#tix a:visited {
+	color: var(--wp--preset--color--custom-orange-secondary);
+}
+
+#tix a:hover,
+#tix a:focus {
+	color: var(--wp--preset--color--custom-orange-primary);
+}
+
+#tix #tix-errors,
+#tix #tix-infos {
+	border-radius: 10px !important;
+	margin-bottom: var(--wp--preset--spacing--40);
+}
+
+#tix #tix-errors .tix-error,
+#tix #tix-infos .tix-info {
+	padding-bottom: var(--wp--preset--spacing--30);
+	padding-left: var(--wp--preset--spacing--40);
+	padding-right: var(--wp--preset--spacing--40);
+	padding-top: var(--wp--preset--spacing--30);
+}
+
+#tix h2 {
+	text-align: center;
+	text-shadow: -4px 6px var(--wp--preset--color--custom-orange-tertiary);
+}
+
+#tix .tix-ticket-form th,
+#tix .tix_tickets_table th,
+#tix .tix_tickets_table .tix-row-total {
+	border: none;
+	border-bottom: 1px solid var(--wp--preset--color--custom-orange-primary) !important;
+	color: var(--wp--preset--color--secondary);
+	margin-bottom: var(--wp--preset--spacing--40);
+	margin-top: var(--wp--preset--spacing--40);
+	text-align: left;
+}
+
+#tix .tix-ticket-form tbody tr {
+	border-bottom: 1px solid var(--wp--preset--color--custom-orange-secondary) !important;
+}
+
+#tix .tix_tickets_table .tix-column-per-ticket,
+#tix .tix_tickets_table .tix-column-price,
+#tix .tix_tickets_table .tix-column-remaining,
+#tix .tix_tickets_table .tix-column-quantity {
+	text-align: right !important;
+	width: 15%;
+}
+
+#tix .tix_tickets_table .tix-row-total {
+	text-align: right !important;
+}
+
+#tix .tix-attendee-form,
+#tix .tix-attendee-form tr,
+#tix .tix-attendee-form td,
+#tix .tix-attendee-form th {
+	display: block;
+	width: 100%;
+}
+
+#tix .tix-attendee-form th {
+	font-size: var(--wp--preset--font-size--x-large);
+	line-height: 1.4;
+}
+
+#tix .tix-attendee-form .tix-left {
+	margin-bottom: 0.25rem;
+	padding-bottom: 0;
+}
+
+#tix .tix-attendee-form .tix-right {
+	padding-left: 0;
+}
+
+#tix .tix_tickets_table label,
+#tix .tix_tickets_table .tix-left {
+	display: block;
+	float: none;
+	font-weight: 700;
+	margin-bottom: 0.25em;
+	width: 100%;
+}
+
+#tix .tix-row-health-advisory .tix-left p {
+	font-weight: 400 !important;
+}
+
+#tix fieldset {
+	margin-bottom: 1em;
+}
+
+#tix fieldset label {
+	align-items: center;
+	display: inline-flex;
+	float: none;
+	font-weight: 400 !important;
+	line-height: 1 !important;
+}
+
+#tix .tix-column-description br,
+#tix fieldset br {
+	content: " ";
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+#tix input[type="text"],
+#tix input[type="email"],
+#tix input[type="url"],
+#tix textarea,
+#tix select {
+	border-radius: 0;
+	box-sizing: border-box;
+	font: inherit;
+	margin-bottom: 1em;
+	padding: 16px;
+	width: 100%;
+}
+
+#tix .tix-coupon-input {
+	width: auto !important;
+}
+
+#tix .tix-column-quantity select {
+	text-align: right !important;
+	width: auto !important;
+}
+
+#tix .tix-submit {
+	text-align: center !important;
+}
+
+#tix input[type="submit"] {
+	background-color: var(--wp--preset--color--custom-orange-primary);
+	border-radius: 0;
+	border-radius: 0;
+	border-width: 0;
+	clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+	color: var(--wp--preset--color--base);
+	cursor: pointer !important;
+	display: inline-block;
+	filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 40%));
+	font-size: 1.5em;
+	margin: 0 auto;
+	margin-bottom: 64px !important;
+	padding: 32px 64px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 300ms;
+}
+
+#tix input[type="submit"]:hover,
+#tix input[type="submit"]:focus {
+	background-color: var(--wp--preset--color--custom-orange-secondary) !important;
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%) !important;
+	color: #000 !important;
+}
+
+#tix .tix-submit {
+	margin-bottom: 100px !important;
+}
+
+/** end_camptix **/
+
+/* WordCamp Mumbai 2023 CSS Ends */
