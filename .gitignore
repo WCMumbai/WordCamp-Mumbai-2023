@@ -8,3 +8,4 @@ build/wcmumbai2023.js
 build/wcmumbai2023.asset.*
 build/style-wcmumbai2023.css
 package-lock.json
+node_modules/
