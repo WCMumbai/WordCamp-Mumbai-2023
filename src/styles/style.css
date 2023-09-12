@@ -535,5 +535,176 @@ footer .wp-social-link {
 }
 
 /** end_camptix **/
+/* Attendees */
+#tix-attendees .tix-attendee-list {
+  padding-left: 20px;
+}
+
+#tix-attendees .tix-attendee-list.tix-columns-3 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#tix-attendees .tix-attendee-list.tix-columns-3 img {
+  width: 90px;
+  height: 90px;
+}
+
+#tix-attendees .tix-attendee-list.tix-columns-3 li {
+  margin-bottom: 30px;
+  width: 33.33%;
+}
+
+#tix-attendees .tix-attendee-list .tix-field {
+  margin-left: 105px;
+}
+
+@media screen and (max-width: 30em) {
+  .page-slug-uczestnicy #tix-attendees .tix-attendee-list {
+    padding-left: 0;
+  }
+
+  .page-slug-uczestnicy #tix-attendees .tix-attendee-list.tix-columns-3 li {
+    width: 100% !important;
+  }
+
+  .site-description {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .page-slug-uczestnicy #tix-attendees .tix-attendee-list {
+    padding-left: 0;
+  }
+
+  .page-slug-uczestnicy #tix-attendees .tix-attendee-list.tix-columns-3 li {
+    width: 50%;
+  }
+}
+
+#tix-attendees .tix-columns-4 li {
+  width: -webkit-calc(25% - 30px);
+  width: -moz-calc(25% - 30px);
+  width: -o-calc(25% - 30px);
+  width: calc(25% - 30px);
+}
+
+#tix-attendees .tix-columns-3 li {
+  width: -webkit-calc(33.33% - 30px);
+  width: -moz-calc(33.33% - 30px);
+  width: -o-calc(33.33% - 30px);
+}
+
+#tix-attendees li {
+  margin: 15px;
+  height: 300px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#tix-attendees .tix-columns-4 li .avatar {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+#tix-attendees .tix-columns-4 li .avatar::after {
+  clear: both;
+}
+
+#tix-attendees .tix-columns-3 li .avatar {
+  width: 100%;
+  height: auto;
+}
+
+#tix-attendees .tix-field {
+  margin-left: 0;
+  padding: 0 10px;
+}
+
+#tix-attendees .tix-attendee-name {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+#tix-attendees .tix-attendee-name::before {
+  clear: both;
+}
+
+#tix-attendees .tix-attendee-twitter,
+#tix-attendees .tix-attendee-url {
+  float: left;
+  font-size: 0 !important;
+  color: var(--wp--preset--color--primary);
+  text-decoration: none;
+  margin-top: 1.5em;
+}
+
+#tix-attendees .tix-skill-sets,
+#tix-attendees .tix-i-will-contribute-to {
+  font-size: 0.7em;
+}
+
+#tix-attendees .tix-attendee-twitter:before,
+#tix-attendees .tix-attendee-url:before {
+  font-family: "FontAwesome";
+  font-size: 24px;
+}
+
+#tix-attendees .tix-attendee-twitter:before {
+  content: "\f099";
+}
+
+#tix-attendees .tix-attendee-url:before {
+  content: "\f0c1";
+}
+
+#tix-attendees .tix-skill-sets:contains(Developer) {
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  #tix-attendees .tix-columns-4 li {
+    width: -webkit-calc(33% - 30px);
+    width: -moz-calc(33% - 30px);
+    width: -o-calc(33% - 30px);
+    width: calc(33% - 30px);
+  }
+
+  #tix-attendees li {
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #tix-attendees .tix-columns-4 li {
+    width: -webkit-calc(50% - 30px);
+    width: -moz-calc(50% - 30px);
+    width: -o-calc(50% - 30px);
+    width: calc(50% - 30px);
+  }
+
+  #tix-attendees li {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #tix-attendees li {
+    height: 310px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #tix-attendees li {
+    height: 280px;
+  }
+}
+/* END Attendees */
 
 /* WordCamp Mumbai 2023 CSS Ends */
