@@ -335,7 +335,7 @@ footer .wp-social-link {
 
 /**
  * CampTix Elements
- * Tix for WordCamp Asia 2024
+ * Tix for WordCamp Mumbai 2023
  **/
 
 #tix .tix-ticket-form,
@@ -343,7 +343,8 @@ footer .wp-social-link {
 	border: 1px solid var(--wp--preset--color--custom-orange-primary) !important;
 	margin: auto !important;
 	margin-bottom: 1.25em;
-	max-width: 640px;
+
+	/* max-width: 640px; */
 	padding-bottom: clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);
 	padding-left: var(--wp--preset--spacing--40);
 	padding-right: var(--wp--preset--spacing--40);
@@ -378,6 +379,10 @@ footer .wp-social-link {
 #tix h2 {
 	text-align: center;
 	text-shadow: -4px 6px var(--wp--preset--color--custom-orange-tertiary);
+}
+
+#tix .tix-ticket-title {
+	padding-top: 40px;
 }
 
 #tix .tix-ticket-form th,
@@ -491,7 +496,6 @@ footer .wp-social-link {
 #tix input[type="submit"] {
 	background-color: var(--wp--preset--color--custom-orange-primary);
 	border-radius: 0;
-	border-radius: 0;
 	border-width: 0;
 	clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
 	color: var(--wp--preset--color--base);
@@ -501,7 +505,7 @@ footer .wp-social-link {
 	font-size: 1.5em;
 	margin: 0 auto;
 	margin-bottom: 64px !important;
-	padding: 32px 64px;
+	padding: 16px 32px;
 	text-align: center;
 	text-decoration: none;
 	transition: all 300ms;
@@ -516,6 +520,14 @@ footer .wp-social-link {
 
 #tix .tix-submit {
 	margin-bottom: 100px !important;
+}
+
+#tix .tix-row-coupon > td {
+	padding-top: 40px;
+}
+
+#tix #tix-coupon-input {
+	width: 75%;
 }
 
 /** end_camptix **/
