@@ -530,6 +530,10 @@ footer .wp-social-link {
 	width: 75%;
 }
 
+#tix .tix-has-dynamic-receipts {
+	padding-bottom: 100px;
+}
+
 /** end_camptix **/
 
 /* WordCamp Mumbai 2023 CSS Ends */
