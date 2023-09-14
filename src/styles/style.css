@@ -490,7 +490,9 @@ footer .wp-social-link {
 }
 
 #tix .tix-submit {
+	display: flex;
 	text-align: center !important;
+	margin-bottom: 100px !important;
 }
 
 #tix input[type="submit"] {
@@ -500,7 +502,7 @@ footer .wp-social-link {
 	clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
 	color: var(--wp--preset--color--base);
 	cursor: pointer !important;
-	display: inline-block;
+	display: flex; /*inline-block;*/
 	filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 40%));
 	font-size: 1.5em;
 	margin: 0 auto;
@@ -516,10 +518,6 @@ footer .wp-social-link {
 	background-color: var(--wp--preset--color--custom-orange-secondary) !important;
 	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%) !important;
 	color: #000 !important;
-}
-
-#tix .tix-submit {
-	margin-bottom: 100px !important;
 }
 
 #tix .tix-row-coupon > td {
