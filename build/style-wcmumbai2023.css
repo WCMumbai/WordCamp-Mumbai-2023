@@ -8,11 +8,17 @@
   }
   .wp-container-44.wp-container-44.wp-container-44.wp-container-44 > * + * {
     align-content: center;
+    padding-left: 50px;
+    padding-top:15px;
   }
   .items-justified-left.is-vertical.foot-nav-two.wp-block-navigation.is-content-justification-left.is-layout-flex.wp-container-46.wp-block-navigation-is-layout-flex {
     align-content: center;
+    padding-left: 50px;
+    padding-top:15px;
   }
   .items-justified-left.is-vertical.foot-nav-one.wp-block-navigation.has-open-sans-font-family.is-content-justification-left.is-layout-flex.wp-container-43.wp-block-navigation-is-layout-flex {
     align-content: center;
+    padding-left: 50px;
+    padding-top:15px;
   }
 }
